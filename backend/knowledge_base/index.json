@@ -1,0 +1,290 @@
+{
+  "course_id": "ml_basic",
+  "course_name": "机器学习基础",
+  "course_level": "本科二年级",
+  "description": "面向人工智能、计算机等专业本科生的机器学习基础课程，覆盖监督学习、模型评估、过拟合控制和神经网络入门。",
+  "chapters": [
+    {
+      "chapter_id": "00",
+      "title": "课程大纲",
+      "file_path": "00_课程大纲.md",
+      "difficulty": "easy",
+      "resource_types": ["lecture", "mindmap", "quiz"],
+      "knowledge_points": [
+        {
+          "id": "kp_0001",
+          "name": "机器学习课程目标",
+          "prerequisites": [],
+          "difficulty": "easy"
+        },
+        {
+          "id": "kp_0002",
+          "name": "学习路径规划",
+          "prerequisites": [],
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "chapter_id": "01",
+      "title": "机器学习概述",
+      "file_path": "01_机器学习概述.md",
+      "difficulty": "easy",
+      "resource_types": ["lecture", "mindmap", "quiz", "animation"],
+      "knowledge_points": [
+        {
+          "id": "kp_0101",
+          "name": "监督学习",
+          "prerequisites": ["函数基础"],
+          "difficulty": "easy"
+        },
+        {
+          "id": "kp_0102",
+          "name": "无监督学习",
+          "prerequisites": ["数据特征"],
+          "difficulty": "easy"
+        },
+        {
+          "id": "kp_0103",
+          "name": "训练集与测试集",
+          "prerequisites": ["数据集"],
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "chapter_id": "02",
+      "title": "数据预处理",
+      "file_path": "02_数据预处理.md",
+      "difficulty": "easy",
+      "resource_types": ["lecture", "quiz", "code_lab"],
+      "knowledge_points": [
+        {
+          "id": "kp_0201",
+          "name": "缺失值处理",
+          "prerequisites": ["表格数据"],
+          "difficulty": "easy"
+        },
+        {
+          "id": "kp_0202",
+          "name": "特征缩放",
+          "prerequisites": ["均值", "方差"],
+          "difficulty": "medium"
+        },
+        {
+          "id": "kp_0203",
+          "name": "数据集划分",
+          "prerequisites": ["训练集与测试集"],
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "chapter_id": "03",
+      "title": "线性回归",
+      "file_path": "03_线性回归.md",
+      "difficulty": "medium",
+      "resource_types": ["lecture", "mindmap", "quiz", "code_lab", "animation"],
+      "knowledge_points": [
+        {
+          "id": "kp_0301",
+          "name": "线性模型",
+          "prerequisites": ["函数基础", "矩阵基础"],
+          "difficulty": "easy"
+        },
+        {
+          "id": "kp_0302",
+          "name": "最小二乘法",
+          "prerequisites": ["平方误差", "导数"],
+          "difficulty": "medium"
+        },
+        {
+          "id": "kp_0303",
+          "name": "梯度下降",
+          "prerequisites": ["导数", "损失函数"],
+          "difficulty": "medium"
+        },
+        {
+          "id": "kp_0304",
+          "name": "线性回归代码实现",
+          "prerequisites": ["Python", "NumPy"],
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "chapter_id": "04",
+      "title": "逻辑回归",
+      "file_path": "04_逻辑回归.md",
+      "difficulty": "medium",
+      "resource_types": ["lecture", "mindmap", "quiz", "code_lab", "animation"],
+      "knowledge_points": [
+        {
+          "id": "kp_0401",
+          "name": "分类问题与逻辑回归思想",
+          "prerequisites": ["线性模型", "概率基础"],
+          "difficulty": "easy"
+        },
+        {
+          "id": "kp_0402",
+          "name": "Sigmoid 函数",
+          "prerequisites": ["指数函数", "函数图像"],
+          "difficulty": "medium"
+        },
+        {
+          "id": "kp_0403",
+          "name": "逻辑回归损失函数",
+          "prerequisites": ["概率基础", "对数函数"],
+          "difficulty": "medium"
+        },
+        {
+          "id": "kp_0404",
+          "name": "梯度下降优化",
+          "prerequisites": ["导数", "偏导数", "损失函数"],
+          "difficulty": "hard"
+        },
+        {
+          "id": "kp_0405",
+          "name": "逻辑回归代码实现",
+          "prerequisites": ["Python", "NumPy", "分类任务"],
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "chapter_id": "05",
+      "title": "决策树",
+      "file_path": "05_决策树.md",
+      "difficulty": "medium",
+      "resource_types": ["lecture", "mindmap", "quiz", "animation"],
+      "knowledge_points": [
+        {
+          "id": "kp_0501",
+          "name": "信息增益",
+          "prerequisites": ["熵", "概率"],
+          "difficulty": "medium"
+        },
+        {
+          "id": "kp_0502",
+          "name": "基尼指数",
+          "prerequisites": ["分类任务"],
+          "difficulty": "medium"
+        },
+        {
+          "id": "kp_0503",
+          "name": "剪枝",
+          "prerequisites": ["过拟合"],
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "chapter_id": "06",
+      "title": "KNN算法",
+      "file_path": "06_KNN算法.md",
+      "difficulty": "easy",
+      "resource_types": ["lecture", "quiz", "code_lab", "animation"],
+      "knowledge_points": [
+        {
+          "id": "kp_0601",
+          "name": "距离度量",
+          "prerequisites": ["向量", "欧氏距离"],
+          "difficulty": "easy"
+        },
+        {
+          "id": "kp_0602",
+          "name": "K 值选择",
+          "prerequisites": ["模型评估"],
+          "difficulty": "medium"
+        },
+        {
+          "id": "kp_0603",
+          "name": "KNN 分类流程",
+          "prerequisites": ["监督学习"],
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "chapter_id": "07",
+      "title": "模型评估",
+      "file_path": "07_模型评估.md",
+      "difficulty": "medium",
+      "resource_types": ["lecture", "mindmap", "quiz", "code_lab"],
+      "knowledge_points": [
+        {
+          "id": "kp_0701",
+          "name": "准确率",
+          "prerequisites": ["分类任务"],
+          "difficulty": "easy"
+        },
+        {
+          "id": "kp_0702",
+          "name": "精确率与召回率",
+          "prerequisites": ["混淆矩阵"],
+          "difficulty": "medium"
+        },
+        {
+          "id": "kp_0703",
+          "name": "交叉验证",
+          "prerequisites": ["数据集划分"],
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "chapter_id": "08",
+      "title": "过拟合与正则化",
+      "file_path": "08_过拟合与正则化.md",
+      "difficulty": "medium",
+      "resource_types": ["lecture", "mindmap", "quiz", "animation"],
+      "knowledge_points": [
+        {
+          "id": "kp_0801",
+          "name": "过拟合",
+          "prerequisites": ["训练误差", "测试误差"],
+          "difficulty": "easy"
+        },
+        {
+          "id": "kp_0802",
+          "name": "L1 正则化",
+          "prerequisites": ["损失函数"],
+          "difficulty": "medium"
+        },
+        {
+          "id": "kp_0803",
+          "name": "L2 正则化",
+          "prerequisites": ["损失函数", "向量范数"],
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "chapter_id": "09",
+      "title": "神经网络基础",
+      "file_path": "09_神经网络基础.md",
+      "difficulty": "hard",
+      "resource_types": ["lecture", "mindmap", "quiz", "code_lab", "animation"],
+      "knowledge_points": [
+        {
+          "id": "kp_0901",
+          "name": "神经元模型",
+          "prerequisites": ["线性模型", "激活函数"],
+          "difficulty": "medium"
+        },
+        {
+          "id": "kp_0902",
+          "name": "前向传播",
+          "prerequisites": ["矩阵乘法"],
+          "difficulty": "medium"
+        },
+        {
+          "id": "kp_0903",
+          "name": "反向传播",
+          "prerequisites": ["链式法则", "梯度下降"],
+          "difficulty": "hard"
+        }
+      ]
+    }
+  ]
+}

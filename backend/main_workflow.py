@@ -34,11 +34,13 @@ class LearningPackageWorkflow:
         resource_result = self.resource_agent.generate_resources(
             profile=profile_result["profile"],
             retrieved_context=retrieval_result,
+            target_topic=target_topic,
         )
         review_path_result = self.review_path_agent.review_and_plan(
             profile=profile_result["profile"],
             retrieved_context=retrieval_result,
             resources=resource_result["resources"],
+            target_topic=target_topic,
         )
 
         return {

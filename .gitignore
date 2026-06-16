@@ -8,6 +8,11 @@ env/
 
 .env
 .env.*
+!frontend/.env.development
+
+node_modules/
+dist/
+*.tsbuildinfo
 
 backend/data/*.sqlite3
 backend/data/*.db
